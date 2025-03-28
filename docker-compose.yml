@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  hello-world:
+    image: localhost:5000/hello-world-node:latest
+    build: .
+    ports:
+      - "8004:8004"
+    restart: always
